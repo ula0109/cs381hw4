@@ -48,7 +48,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, sticker)
             return
 
-        elif msg == "圖片":
+        elif msg == "圖片)":
             image = ImageSendMessage(
                 original_content_url="https://example.com/sample.jpg",
                 preview_image_url="https://example.com/sample.jpg"
