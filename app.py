@@ -91,6 +91,7 @@ def handle_message(event):
 # 查詢對話紀錄
 @app.route('/history', methods=['GET'])
 def get_history():
+    print("目前歷史紀錄：", history)
     return jsonify(history)
 
 # 清除對話紀錄
