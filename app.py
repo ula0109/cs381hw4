@@ -21,7 +21,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel(model_name="models/gemini-1.5-pro-latest")
 
 # 儲存對話紀錄（可擴充為 per-user）
-history = []
+history = [1]
 
 @app.route("/callback", methods=['POST'])
 def callback():
